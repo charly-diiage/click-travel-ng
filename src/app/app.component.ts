@@ -23,9 +23,7 @@ export class AppComponent implements OnInit {
     .pipe(map(e => e.filter(e => e.isDreamDestination == true)))
     .subscribe((data) => {
       this.destinations = data;
-      console.log(this.destinations);
-      
+      console.log(this.destinations);     
     });
   }
-
 }
