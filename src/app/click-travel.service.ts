@@ -27,4 +27,10 @@ export class ClickTravelService {
     return t;
   }
 
+  getTicket(id: number): Observable<ITicket>{
+    var t = 
+    this.httpClient.get<ITicket>(environment.apiUrl + '/tickets/' + id);
+    return t;
+  }
+
 }

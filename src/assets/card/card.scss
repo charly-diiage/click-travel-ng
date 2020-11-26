@@ -1,0 +1,33 @@
+.card {
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 24px;
+    background-color: white;
+  }
+
+.card-header{
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    background-color: rgb(0, 98, 255);
+    color: white;
+    top: 0;
+}
+
+.card-footer{
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: rgb(0, 98, 255);
+    height: 20px;
+    bottom: 0;
+}
+
+.inline{
+    padding: 10px;
+    display:inline-block;
+}
+
+.label-text{
+    color: rgb(129, 129, 129);
+}

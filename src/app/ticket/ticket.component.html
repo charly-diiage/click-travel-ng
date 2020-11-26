@@ -1,5 +1,62 @@
-<div class="ticket">
-    <p *ngFor="let ticket of tickets">
-       {{ticket.flight}}
-    </p>
+<div class="links">
+    <a class="giant-button" *ngFor="let ticket of tickets">{{ticket.flight}}, {{ticket.to}}</a>
+</div>
+<div class="card links" *ngFor="let ticket of tickets">
+    <div class="card-header"> 
+        <p>{{ticket.class}}</p>
+    </div>
+    <div>
+        <div>
+            <span class="inline">
+                <label class="label-text">PASSENGER</label>
+                <p>
+                    {{ticket.passenger}}
+                </p>
+            </span>
+            <span class="inline">
+                <label class="label-text">FLIGHT</label>
+                <p>
+                    {{ticket.flight}}
+                </p>
+            </span>
+            <span class="inline">
+                <label class="label-text">FROM</label>
+                <p>
+                    {{ticket.from}}
+                </p>
+            </span>
+            <span class="inline">
+                <label class="label-text">TO</label>
+                <p>
+                    {{ticket.to}}
+                </p>
+            </span>
+            <span class="inline">
+                <label class="label-text">CLASS</label>
+                <p>
+                    {{ticket.class}}
+                </p>
+            </span>
+        </div>
+        <span class="inline">
+            <label class="label-text">GATE</label>
+            <p>
+                {{ticket.gate}}
+            </p>
+        </span>
+        <span class="inline">
+            <label class="label-text">TIME</label>
+            <p>
+                {{ ticket.time}}
+            </p>
+        </span>
+        <span class="inline">
+        <label class="label-text">SEAT</label>
+        <p>
+            {{ticket.seat}}
+        </p>
+    </span>
+    </div>
+    <div class="card-footer">
+    </div>
 </div>
